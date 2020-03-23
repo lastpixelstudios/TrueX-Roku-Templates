@@ -4,6 +4,7 @@
 			"name": "main_card",
 			"elements": [
 				{
+					"__comment__": "Button on top of video when unit loads",
 					"name": "Interact_Button",
 					"type": "Button",
 					"x": "1480",
@@ -15,6 +16,7 @@
 					"focusable": true
 				},
 				{
+					"__comment__": "DON'T REPLACE. Replay icon over thumbnail.",
 					"name": "Replay_Video_Icon",
 					"type": "Image",
 					"x": "110",
@@ -25,6 +27,7 @@
 					"opacity": "0"
 				},
 				{
+					"__comment__": "Replay Thumbnail image for video",
 					"name": "Replay_Video_Thumbnail",
 					"type": "Image",
 					"x": "110",
@@ -35,6 +38,7 @@
 					"opacity": "0"
 				},
 				{
+					"__comment__": "Main video in unit",
 					"name": "Video_Player",
 					"type": "Video",
 					"x": "0",
@@ -50,6 +54,7 @@
 					"src": "https://media.truex.com/video_assets/2020-03-11/a9651d02-42e1-4c71-9456-3972b6bbba2d_ottPreset.mp4"
 				},
 				{
+					"__comment__": "DON'T REPLACE.Transparent button.",
 					"name": "Button_1",
 					"type": "Button",
 					"x": "1538",
@@ -61,6 +66,7 @@
 					"hover_effect": false
 				},
 				{
+					"__comment__": "Pagination Button 1",
 					"name": "Button_2",
 					"type": "Button",
 					"x": "1574",
@@ -73,6 +79,7 @@
 					"hover_effect": false
 				},
 				{
+					"__comment__": "Pagination Button 1",
 					"name": "Button_3",
 					"type": "Button",
 					"x": "1610",
@@ -85,6 +92,7 @@
 					"hover_effect": false
 				},
 				{
+					"__comment__": "Left arrow icon",
 					"name": "Left_Arrow",
 					"type": "Image",
 					"x": "1512",
@@ -94,6 +102,7 @@
 					"image_url": "https://media.truex.com/image_assets/2020-03-11/17e2ae91-23b2-4558-99c9-c9422959d0df.png"
 				},
 				{
+					"__comment__": "Right arrow icon",
 					"name": "Right",
 					"type": "Image",
 					"x": "1648",
@@ -103,6 +112,7 @@
 					"image_url": "https://media.truex.com/image_assets/2020-03-11/303988b0-8c00-4c36-9fb2-b9a904d08b0d.png"
 				},
 				{
+					"__comment__": "Video highlight panel",
 					"name": "Panel_1",
 					"type": "Image",
 					"x": "0",
@@ -113,6 +123,7 @@
 					"opacity": "0"
 				},
 				{
+					"__comment__": "Pagination 1 Panel",
 					"name": "Panel_2",
 					"type": "Image",
 					"x": "0",
@@ -123,6 +134,7 @@
 					"opacity": "1"
 				},
 				{
+					"__comment__": "Pagination 2 Panel",
 					"name": "Panel_3",
 					"type": "Image",
 					"x": "0",
