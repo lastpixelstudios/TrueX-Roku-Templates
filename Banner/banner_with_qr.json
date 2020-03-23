@@ -4,6 +4,7 @@
 			"name": "main_card",
 			"elements": [
 				{
+					"__comment__": "Button on top of video when unit loads",
 					"name": "Interact_Button",
 					"type": "Button",
 					"x": "1480",
@@ -15,6 +16,7 @@
 					"focusable": true
 				},
 				{
+					"__comment__": "DON'T REPLACE. Replay icon over thumbnail.",
 					"name": "Replay_Video_Icon",
 					"type": "Image",
 					"x": "110",
@@ -25,6 +27,7 @@
 					"opacity": "0"
 				},
 				{
+					"__comment__": "Replay Thumbnail image for video",
 					"name": "Replay_Video_Thumbnail",
 					"type": "Image",
 					"x": "110",
@@ -35,6 +38,7 @@
 					"opacity": "0"
 				},
 				{
+					"__comment__": "Main video in unit",
 					"name": "Video_Player",
 					"type": "Video",
 					"x": "0",
@@ -50,6 +54,7 @@
 					"src": "https://media.truex.com/video_assets/2020-03-11/a9651d02-42e1-4c71-9456-3972b6bbba2d_ottPreset.mp4"
 				},
 				{
+					"__comment__": "DON'T REPLACE.Transparent button.",
 					"name": "Button_1",
 					"type": "Button",
 					"x": "1555",
@@ -61,6 +66,7 @@
 					"hover_effect": true
 				},
 				{
+					"__comment__": "DON'T REPLACE. Transparent button.",
 					"name": "Button_2",
 					"type": "Button",
 					"x": "1595",
@@ -72,6 +78,7 @@
 					"hover_effect": true
 				},
 				{
+					"__comment__": "DON'T REPLACE. Transparent button.",
 					"name": "Button_3",
 					"type": "Button",
 					"x": "1635",
@@ -83,6 +90,7 @@
 					"hover_effect": true
 				},
 				{
+					"__comment__": "Main QR code in unit.",
 					"name": "QR_Code",
 					"type": "Button",
 					"x": "1920",
@@ -94,6 +102,7 @@
 					"focusable": false
 				},
 				{
+					"__comment__": "Scan image under QR and QR background.",
 					"name": "Scan_Image",
 					"type": "Button",
 					"x": "1920",
@@ -105,6 +114,7 @@
 					"focusable": false
 				},
 				{
+					"__comment__": "Video highlight panel",
 					"name": "Panel_1",
 					"type": "Image",
 					"x": "0",
@@ -115,6 +125,7 @@
 					"opacity": "0"
 				},
 				{
+					"__comment__": "CTA active panel",
 					"name": "Panel_2",
 					"type": "Image",
 					"x": "0",
@@ -125,6 +136,7 @@
 					"opacity": "1"
 				},
 				{
+					"__comment__": "Static panel. Video and CTA not highlighted.",
 					"name": "Panel_3",
 					"type": "Image",
 					"x": "0",
@@ -135,6 +147,7 @@
 					"opacity": "0"
 				},
 				{
+					"__comment__": "QR Code panel.",
 					"name": "Panel_4",
 					"type": "Image",
 					"x": "0",
