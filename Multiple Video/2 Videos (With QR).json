@@ -4,20 +4,22 @@
 			"name": "main_card",
 			"elements": [
 				{
+					"__comment__": "Replay Thumbnail image for Video_1 (video being played)",
 					"name": "Video_1_Thumbnail",
 					"type": "Image",
 					"x": "110",
-					"y": "120",
+					"y": "112",
 					"width": "1150",
 					"height": "647",
 					"image_url": "https://media.truex.com/video_assets/2019-03-11/290e210b-0c08-417f-808a-52c21fc88389.jpg",
 					"opacity": "0"
 				},
 				{
+					"__comment__": "Video for this step",
 					"name": "Video_1",
 					"type": "Video",
 					"x": "110",
-					"y": "120",
+					"y": "112",
 					"width": "1150",
 					"height": "647",
 					"loop": false,
@@ -27,40 +29,44 @@
 					"src": "https://media.truex.com/video_assets/2019-03-11/0be5d352-c861-43d9-aff7-620e558cbe00_large.mp4"
 				},
 				{
+					"__comment__": "DON'T REPLACE. Replay icon over thumbnail.",
 					"name": "Replay_Thumbnail",
 					"type": "Image",
 					"x": "459",
-					"y": "788",
+					"y": "779",
 					"width": "212",
 					"height": "119",
 					"image_url": "https://media.truex.com/image_assets/2020-03-15/59a30adb-0a8d-4471-a61e-6a2136f7e7f7.png",
 					"opacity": 0
 				},
 				{
+					"__comment__": "DON'T REPLACE. Now Playing overlay on thumbnails.",
 					"name": "Now_Playing_Thumbnail",
 					"type": "Image",
 					"x": "459",
-					"y": "788",
+					"y": "779",
 					"width": "212",
 					"height": "119",
 					"image_url": "https://media.truex.com/image_assets/2020-03-15/bb72d927-2903-42bf-9013-0fb986cc4416.png",
 					"opacity": 1
 				},
 				{
+					"__comment__": "DON'T REPLACE. Play icon over video thumbnails",
 					"name": "Play_Thumbnail",
 					"type": "Image",
 					"x": 459,
-					"y": "788",
+					"y": "779",
 					"width": "212",
 					"height": "119",
 					"image_url": "https://media.truex.com/image_assets/2020-03-15/175cb860-eddb-4d25-97f2-e10f653b6eca.png",
 					"opacity": 0
 				},
 				{
+					"__comment__": "Video thumbnail 1",
 					"name": "Button_1",
 					"type": "Button",
 					"x": "459",
-					"y": "788",
+					"y": "779",
 					"width": "212",
 					"height": "119",
 					"image_url": "https://media.truex.com/video_assets/2019-03-11/290e210b-0c08-417f-808a-52c21fc88389.jpg",
@@ -69,10 +75,11 @@
 					"hover_effect": false
 				},
 				{
+					"__comment__": "Video thumbnail 1",
 					"name": "Button_2",
 					"type": "Button",
 					"x": "695",
-					"y": "788",
+					"y": "779",
 					"width": "212",
 					"height": "119",
 					"image_url": "https://media.truex.com/video_assets/2019-03-11/f9428227-b208-4562-91db-4919ff949212.jpg",
@@ -81,10 +88,11 @@
 					"hover_effect": false
 				},
 				{
+					"__comment__": "DON'T REPLACE.Transparent button.",
 					"name": "Button_3",
 					"type": "Button",
 					"x": "1283",
-					"y": "788",
+					"y": "779",
 					"width": "25",
 					"height": "119",
 					"image_url": "https://media.truex.com/image_assets/2020-03-12/f04e4f24-7268-4c36-8baa-ff3be977fec2.png",
@@ -93,10 +101,11 @@
 					"hover_effect": false
 				},
 				{
+					"__comment__": "DON'T REPLACE.Transparent button.",
 					"name": "Button_4",
 					"type": "Button",
 					"x": "1331",
-					"y": "788",
+					"y": "779",
 					"width": "25",
 					"height": "119",
 					"image_url": "https://media.truex.com/image_assets/2020-03-12/f04e4f24-7268-4c36-8baa-ff3be977fec2.png",
@@ -105,37 +114,41 @@
 					"hover_effect": false
 				},
 				{
+					"__comment__": "Background for border around highlighted thumbnail.",
 					"name": "Thumbnail_Highlight",
 					"type": "Image",
 					"x": "459",
-					"y": "778",
+					"y": "769",
 					"width": "232",
 					"height": "139",
 					"image_url": "https://media.truex.com/image_assets/2020-03-13/06d36221-51b0-4cec-9426-1b84702f145a.png"
 				},
 				{
+					"__comment__": "Main QR code in unit.",
 					"name": "QR_Code",
 					"type": "Button",
 					"x": "1920",
-					"y": "270",
-					"width": "450",
-					"height": "450",
+					"y": "277",
+					"width": "428",
+					"height": "428",
 					"image_url": "https://media.truex.com/image_assets/2020-03-10/1c988192-a21b-42d0-8720-0b4b1b82c9ae.png",
-					"opacity": "1",
+					"opacity": "0",
 					"focusable": false
 				},
 				{
+					"__comment__": "Scan image under QR and QR background.",
 					"name": "Scan_Image",
 					"type": "Button",
 					"x": "1920",
-					"y": "243",
-					"width": "500",
-					"height": "603",
-					"image_url": "https://media.truex.com/image_assets/2020-03-11/209fd7b9-769b-45d0-ab8d-cbd7c36c4812.png",
-					"opacity": "1",
+					"y": "250",
+					"width": "480",
+					"height": "647",
+					"image_url": "https://media.truex.com/image_assets/2020-03-23/8455ee45-07a5-4a67-ba3b-9c956afc1d3a.png",
+					"opacity": "0",
 					"focusable": false
 				},
 				{
+					"__comment__": "Panel while navigating thumbnails",
 					"name": "Panel_1",
 					"type": "Image",
 					"x": "0",
@@ -146,6 +159,7 @@
 					"opacity": "1"
 				},
 				{
+					"__comment__": "Panel while CTA is highlighted",
 					"name": "Panel_2",
 					"type": "Image",
 					"x": "0",
@@ -156,6 +170,7 @@
 					"opacity": "0"
 				},
 				{
+					"__comment__": "QR Code panel.",
 					"name": "Panel_3",
 					"type": "Image",
 					"x": "0",
@@ -505,7 +520,7 @@
 							"attributes": {
 								"position": [
 									1920,
-									270
+									277
 								]
 							},
 							"duration": 0.5
@@ -516,7 +531,7 @@
 							"attributes": {
 								"position": [
 									1920,
-									243
+									250
 								]
 							},
 							"duration": 0.5
@@ -610,8 +625,8 @@
 							"name": "QR_Code",
 							"attributes": {
 								"position": [
-									1375,
-									270
+									1376,
+									277
 								]
 							},
 							"duration": 0.5
@@ -621,8 +636,8 @@
 							"name": "Scan_Image",
 							"attributes": {
 								"position": [
-									1347,
-									243
+									1350,
+									250
 								]
 							},
 							"duration": 0.5
@@ -661,20 +676,22 @@
 			"name": "step_2",
 			"elements": [
 				{
+					"__comment__": "Replay Thumbnail image for Video_1 (video being played)",
 					"name": "Video_2_Thumbnail",
 					"type": "Image",
 					"x": "110",
-					"y": "120",
+					"y": "112",
 					"width": "1150",
 					"height": "647",
 					"image_url": "https://media.truex.com/video_assets/2019-03-11/f9428227-b208-4562-91db-4919ff949212.jpg",
 					"opacity": "0"
 				},
 				{
+					"__comment__": "Video for this step",
 					"name": "Video_2",
 					"type": "Video",
 					"x": "110",
-					"y": "120",
+					"y": "112",
 					"width": "1150",
 					"height": "647",
 					"loop": false,
@@ -684,40 +701,44 @@
 					"src": "https://media.truex.com/video_assets/2019-03-11/b43edf49-a7cc-4eca-9d54-5b89b7682cef_large.mp4"
 				},
 				{
+					"__comment__": "DON'T REPLACE. Replay icon over thumbnail.",
 					"name": "Replay_Thumbnail",
 					"type": "Image",
 					"x": "695",
-					"y": "788",
+					"y": "779",
 					"width": "212",
 					"height": "119",
 					"image_url": "https://media.truex.com/image_assets/2020-03-15/59a30adb-0a8d-4471-a61e-6a2136f7e7f7.png",
 					"opacity": 0
 				},
 				{
+					"__comment__": "DON'T REPLACE. Now Playing overlay on thumbnails.",
 					"name": "Now_Playing_Thumbnail",
 					"type": "Image",
 					"x": "695",
-					"y": "788",
+					"y": "779",
 					"width": "212",
 					"height": "119",
 					"image_url": "https://media.truex.com/image_assets/2020-03-15/bb72d927-2903-42bf-9013-0fb986cc4416.png",
 					"opacity": 1
 				},
 				{
+					"__comment__": "DON'T REPLACE. Play icon over video thumbnails",
 					"name": "Play_Thumbnail",
 					"type": "Image",
 					"x": "695",
-					"y": "788",
+					"y": "779",
 					"width": "212",
 					"height": "119",
 					"image_url": "https://media.truex.com/image_assets/2020-03-15/175cb860-eddb-4d25-97f2-e10f653b6eca.png",
 					"opacity": 0
 				},
 				{
+					"__comment__": "Video thumbnail 1",
 					"name": "Button_1",
 					"type": "Button",
 					"x": "459",
-					"y": "788",
+					"y": "779",
 					"width": "212",
 					"height": "119",
 					"image_url": "https://media.truex.com/video_assets/2019-03-11/290e210b-0c08-417f-808a-52c21fc88389.jpg",
@@ -726,10 +747,11 @@
 					"hover_effect": false
 				},
 				{
+					"__comment__": "Video thumbnail 2",
 					"name": "Button_2",
 					"type": "Button",
 					"x": "695",
-					"y": "788",
+					"y": "779",
 					"width": "212",
 					"height": "119",
 					"image_url": "https://media.truex.com/video_assets/2019-03-11/f9428227-b208-4562-91db-4919ff949212.jpg",
@@ -738,10 +760,11 @@
 					"hover_effect": false
 				},
 				{
+					"__comment__": "DON'T REPLACE.Transparent button.",
 					"name": "Button_3",
 					"type": "Button",
 					"x": "1283",
-					"y": "788",
+					"y": "779",
 					"width": "25",
 					"height": "119",
 					"image_url": "https://media.truex.com/image_assets/2020-03-12/f04e4f24-7268-4c36-8baa-ff3be977fec2.png",
@@ -750,10 +773,11 @@
 					"hover_effect": false
 				},
 				{
+					"__comment__": "DON'T REPLACE.Transparent button.",
 					"name": "Button_4",
 					"type": "Button",
 					"x": "1331",
-					"y": "788",
+					"y": "779",
 					"width": "25",
 					"height": "119",
 					"image_url": "https://media.truex.com/image_assets/2020-03-12/f04e4f24-7268-4c36-8baa-ff3be977fec2.png",
@@ -762,37 +786,41 @@
 					"hover_effect": false
 				},
 				{
+					"__comment__": "Background for border around highlighted thumbnail.",
 					"name": "Thumbnail_Highlight",
 					"type": "Image",
 					"x": "695",
-					"y": "778",
+					"y": "769",
 					"width": "232",
 					"height": "139",
 					"image_url": "https://media.truex.com/image_assets/2020-03-13/06d36221-51b0-4cec-9426-1b84702f145a.png"
 				},
 				{
+					"__comment__": "Main QR code in unit.",
 					"name": "QR_Code",
 					"type": "Button",
 					"x": "1920",
-					"y": "270",
-					"width": "450",
-					"height": "450",
+					"y": "277",
+					"width": "428",
+					"height": "428",
 					"image_url": "https://media.truex.com/image_assets/2020-03-10/1c988192-a21b-42d0-8720-0b4b1b82c9ae.png",
-					"opacity": "1",
+					"opacity": "0",
 					"focusable": false
 				},
 				{
+					"__comment__": "Scan image under QR and QR background.",
 					"name": "Scan_Image",
 					"type": "Button",
 					"x": "1920",
-					"y": "243",
-					"width": "500",
-					"height": "603",
-					"image_url": "https://media.truex.com/image_assets/2020-03-11/209fd7b9-769b-45d0-ab8d-cbd7c36c4812.png",
-					"opacity": "1",
+					"y": "250",
+					"width": "480",
+					"height": "647",
+					"image_url": "https://media.truex.com/image_assets/2020-03-23/8455ee45-07a5-4a67-ba3b-9c956afc1d3a.png",
+					"opacity": "0",
 					"focusable": false
 				},
 				{
+					"__comment__": "Panel while navigating thumbnails",
 					"name": "Panel_1",
 					"type": "Image",
 					"x": "0",
@@ -803,6 +831,7 @@
 					"opacity": "1"
 				},
 				{
+					"__comment__": "Panel while CTA is highlighted",
 					"name": "Panel_2",
 					"type": "Image",
 					"x": "0",
@@ -813,6 +842,7 @@
 					"opacity": "0"
 				},
 				{
+					"__comment__": "QR Code panel.",
 					"name": "Panel_3",
 					"type": "Image",
 					"x": "0",
@@ -1168,7 +1198,7 @@
 							"attributes": {
 								"position": [
 									1920,
-									270
+									277
 								]
 							},
 							"duration": 0.5
@@ -1179,7 +1209,7 @@
 							"attributes": {
 								"position": [
 									1920,
-									243
+									250
 								]
 							},
 							"duration": 0.5
@@ -1273,8 +1303,8 @@
 							"name": "QR_Code",
 							"attributes": {
 								"position": [
-									1375,
-									270
+									1376,
+									277
 								]
 							},
 							"duration": 0.5
@@ -1284,8 +1314,8 @@
 							"name": "Scan_Image",
 							"attributes": {
 								"position": [
-									1347,
-									243
+									1350,
+									250
 								]
 							},
 							"duration": 0.5
