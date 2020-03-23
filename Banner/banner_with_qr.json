@@ -94,7 +94,7 @@
 					"name": "QR_Code",
 					"type": "Button",
 					"x": "1920",
-					"y": "264",
+					"y": "263",
 					"width": "428",
 					"height": "428",
 					"image_url": "https://media.truex.com/image_assets/2020-03-10/1c988192-a21b-42d0-8720-0b4b1b82c9ae.png",
@@ -106,7 +106,7 @@
 					"name": "Scan_Image",
 					"type": "Button",
 					"x": "1920",
-					"y": "237",
+					"y": "240",
 					"width": "480",
 					"height": "604",
 					"image_url": "https://media.truex.com/image_assets/2020-03-23/54efc323-48cf-4c80-bdf1-d7f81a8f39f9.png",
@@ -359,7 +359,7 @@
 							"attributes": {
 								"position": [
 									1375,
-									270
+									263
 								]
 							},
 							"duration": 0.5
@@ -370,7 +370,7 @@
 							"attributes": {
 								"position": [
 									1347,
-									273
+									240
 								]
 							},
 							"duration": 0.5
@@ -423,7 +423,7 @@
 							"attributes": {
 								"position": [
 									1920,
-									270
+									263
 								]
 							},
 							"duration": 0.5
@@ -434,7 +434,7 @@
 							"attributes": {
 								"position": [
 									1920,
-									243
+									240
 								]
 							},
 							"duration": 0.5
@@ -499,7 +499,7 @@
 							"attributes": {
 								"position": [
 									1376,
-									270
+									263
 								]
 							},
 							"duration": 0.5
@@ -510,7 +510,7 @@
 							"attributes": {
 								"position": [
 									1347,
-									243
+									240
 								]
 							},
 							"duration": 0.5
