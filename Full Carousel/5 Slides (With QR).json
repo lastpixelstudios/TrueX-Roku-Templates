@@ -1,0 +1,528 @@
+{
+	"steps": [
+		{
+			"name": "main_card",
+			"elements": [
+				{
+					"__comment__": "Pagination Button 1",
+					"name": "Button_1",
+					"type": "Button",
+					"x": "873",
+					"y": "893",
+					"width": "20",
+					"height": "20",
+					"image_url": "https://media.truex.com/image_assets/2020-03-11/8f5d767f-87ba-4c9e-aae1-e99891406572.png",
+					"hover_image_url": "https://media.truex.com/image_assets/2020-03-11/b34e4b49-3371-4df6-a8f5-0f01b3022203.png",
+					"focusable": true,
+					"guide": "right,bottom",
+					"hover_effect": false
+				},
+				{
+					"__comment__": "Pagination Button 2",
+					"name": "Button_2",
+					"type": "Button",
+					"x": "909",
+					"y": "893",
+					"width": "20",
+					"height": "20",
+					"image_url": "https://media.truex.com/image_assets/2020-03-11/8f5d767f-87ba-4c9e-aae1-e99891406572.png",
+					"hover_image_url": "https://media.truex.com/image_assets/2020-03-11/b34e4b49-3371-4df6-a8f5-0f01b3022203.png",
+					"focusable": true,
+					"guide": "right,bottom",
+					"hover_effect": false
+				},
+				{
+					"__comment__": "Pagination Button 3",
+					"name": "Button_3",
+					"type": "Button",
+					"x": "945",
+					"y": "893",
+					"width": "20",
+					"height": "20",
+					"image_url": "https://media.truex.com/image_assets/2020-03-11/8f5d767f-87ba-4c9e-aae1-e99891406572.png",
+					"hover_image_url": "https://media.truex.com/image_assets/2020-03-11/b34e4b49-3371-4df6-a8f5-0f01b3022203.png",
+					"focusable": false,
+					"guide": "right,bottom",
+					"hover_effect": false
+				},
+				{
+					"__comment__": "Pagination Button 4",
+					"name": "Button_4",
+					"type": "Button",
+					"x": "981",
+					"y": "893",
+					"width": "20",
+					"height": "20",
+					"image_url": "https://media.truex.com/image_assets/2020-03-11/8f5d767f-87ba-4c9e-aae1-e99891406572.png",
+					"hover_image_url": "https://media.truex.com/image_assets/2020-03-11/b34e4b49-3371-4df6-a8f5-0f01b3022203.png",
+					"focusable": false,
+					"guide": "right,bottom",
+					"hover_effect": false
+				},
+				{
+					"__comment__": "Pagination Button 5",
+					"name": "Button_5",
+					"type": "Button",
+					"x": "1017",
+					"y": "893",
+					"width": "20",
+					"height": "20",
+					"image_url": "https://media.truex.com/image_assets/2020-03-11/8f5d767f-87ba-4c9e-aae1-e99891406572.png",
+					"hover_image_url": "https://media.truex.com/image_assets/2020-03-11/b34e4b49-3371-4df6-a8f5-0f01b3022203.png",
+					"focusable": false,
+					"guide": "right,bottom",
+					"hover_effect": false
+				},
+				{
+					"__comment__": "Left arrow icon",
+					"name": "Left_Arrow",
+					"type": "Image",
+					"x": "811",
+					"y": "881",
+					"width": "43",
+					"height": "43",
+					"image_url": "https://media.truex.com/image_assets/2020-03-11/17e2ae91-23b2-4558-99c9-c9422959d0df.png"
+				},
+				{
+					"__comment__": "Right arrow icon",
+					"name": "Right_Arrow",
+					"type": "Image",
+					"x": "1058",
+					"y": "881",
+					"width": "43",
+					"height": "43",
+					"image_url": "https://media.truex.com/image_assets/2020-03-11/303988b0-8c00-4c36-9fb2-b9a904d08b0d.png"
+				},
+				{
+					"__comment__": "Main QR code in unit.",
+					"name": "QR_Code",
+					"type": "Button",
+					"x": "746",
+					"y": "244",
+					"width": "428",
+					"height": "428",
+					"image_url": "https://media.truex.com/image_assets/2020-03-10/1c988192-a21b-42d0-8720-0b4b1b82c9ae.png",
+					"opacity": "0",
+					"focusable": false
+				},
+				{
+					"__comment__": "Scan image under QR and QR background.",
+					"name": "Scan_Image",
+					"type": "Button",
+					"x": "720",
+					"y": "216",
+					"width": "480",
+					"height": "604",
+					"image_url": "https://media.truex.com/image_assets/2020-03-23/54efc323-48cf-4c80-bdf1-d7f81a8f39f9.png",
+					"opacity": "0",
+					"focusable": false
+                },
+				{
+					"__comment__": "Pagination 1 Panel",
+					"name": "Panel_1",
+					"type": "Image",
+					"x": "0",
+					"y": "0",
+					"width": "1920",
+					"height": "1080",
+					"image_url": "https://media.truex.com/image_assets/2020-03-12/729f5bea-c92b-4813-be99-0a68b470b95b.png",
+					"opacity": "1"
+				},
+				{
+					"__comment__": "Pagination 2 Panel",
+					"name": "Panel_2",
+					"type": "Image",
+					"x": "0",
+					"y": "0",
+					"width": "1920",
+					"height": "1080",
+					"image_url": "https://media.truex.com/image_assets/2020-03-12/8c90eeb8-7274-46c7-b6a8-639014868ef9.png",
+					"opacity": "0"
+				},
+				{
+					"__comment__": "Pagination 3 Panel",
+					"name": "Panel_3",
+					"type": "Image",
+					"x": "0",
+					"y": "0",
+					"width": "1920",
+					"height": "1080",
+					"image_url": "https://media.truex.com/image_assets/2020-03-12/2ca18549-c665-4171-ad30-b71c17abb81a.png",
+					"opacity": "0"
+				},
+				{
+					"__comment__": "Pagination 4 Panel",
+					"name": "Panel_4",
+					"type": "Image",
+					"x": "0",
+					"y": "0",
+					"width": "1920",
+					"height": "1080",
+					"image_url": "https://media.truex.com/image_assets/2020-03-12/aca9ba13-ecda-4590-897d-b9bf2ffe88fc.png",
+					"opacity": "0"
+				},
+				{
+					"__comment__": "Pagination 5 Panel",
+					"name": "Panel_5",
+					"type": "Image",
+					"x": "0",
+					"y": "0",
+					"width": "1920",
+					"height": "1080",
+					"image_url": "https://media.truex.com/image_assets/2020-03-12/f4d94f94-d01f-473d-836a-f9f7b1364a18.png",
+					"opacity": "0"
+				}
+			],
+			"behaviors": {
+				"Button_1": {
+					"onFocusGained": [
+						{
+							"host": "setAttribute",
+							"name": "Panel_1",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_2",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_3",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_4",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_5",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": true
+						}
+					],
+					"onFocusLost": [
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": false
+						}
+					]
+				},
+				"Button_2": {
+					"onFocusGained": [
+						{
+							"host": "setAttribute",
+							"name": "Panel_1",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_2",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_3",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_4",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_5",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": true
+						}
+					],
+					"onFocusLost": [
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": false
+						}
+					]
+				},
+				"Button_3": {
+					"onFocusGained": [
+						{
+							"host": "setAttribute",
+							"name": "Panel_1",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_2",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_3",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_4",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_5",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_4",
+							"key": "focusable",
+							"value": true
+						}
+					],
+					"onFocusLost": [
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_4",
+							"key": "focusable",
+							"value": false
+						}
+					]
+				},
+				"Button_4": {
+					"onFocusGained": [
+						{
+							"host": "setAttribute",
+							"name": "Panel_1",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_2",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_3",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_4",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_5",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_4",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_5",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "QR_Code",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Scan_Image",
+							"key": "opacity",
+							"value": 0
+						}
+					],
+					"onFocusLost": [
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_4",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_5",
+							"key": "focusable",
+							"value": false
+						}
+					]
+				},
+				"Button_5": {
+					"onFocusGained": [
+						{
+							"host": "setAttribute",
+							"name": "Panel_1",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_2",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_3",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_4",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Panel_5",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_4",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_5",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "QR_Code",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Scan_Image",
+							"key": "opacity",
+							"value": 1
+						}
+					],
+					"onFocusLost": [
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_4",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_5",
+							"key": "focusable",
+							"value": true
+						}
+					]
+				}
+			}
+		}
+	]
+}
