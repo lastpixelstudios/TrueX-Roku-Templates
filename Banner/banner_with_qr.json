@@ -18,7 +18,7 @@
 					"name": "Replay_Video_Icon",
 					"type": "Image",
 					"x": "110",
-					"y": "222",
+					"y": "217",
 					"width": "1150",
 					"height": "647",
 					"image_url": "https://media.truex.com/image_assets/2020-03-16/ae7a7720-1074-4168-9c7d-6bee1fb477a8.png",
@@ -28,7 +28,7 @@
 					"name": "Replay_Video_Thumbnail",
 					"type": "Image",
 					"x": "110",
-					"y": "222",
+					"y": "217",
 					"width": "1150",
 					"height": "647",
 					"image_url": "https://media.truex.com/video_assets/2020-03-11/5c270a52-a61f-4e5f-b178-da2be591c15e.jpg",
@@ -111,7 +111,7 @@
 					"y": "0",
 					"width": "1920",
 					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-10/477298b6-8211-47ef-bf60-5c8f53aeb2ea.png",
+					"image_url": "https://media.truex.com/image_assets/2020-03-23/5f478c8d-2922-4462-a9c1-11e5dfa1cd42.png",
 					"opacity": "0"
 				},
 				{
@@ -186,7 +186,7 @@
 							"attributes": {
 								"position": [
 									110,
-									222
+									217
 								],
 								"size": [
 									1150,
@@ -485,7 +485,7 @@
 							"name": "QR_Code",
 							"attributes": {
 								"position": [
-									1375,
+									1376,
 									270
 								]
 							},
@@ -560,7 +560,7 @@
 									"host": "setAttribute",
 									"name": "Video_Player",
 									"key": "y",
-									"value": 222
+									"value": 217
 								}
 							]
 						},
