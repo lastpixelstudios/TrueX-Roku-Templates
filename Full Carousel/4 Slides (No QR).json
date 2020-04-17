@@ -80,25 +80,14 @@
 					"image_url": "https://media.truex.com/image_assets/2020-03-11/303988b0-8c00-4c36-9fb2-b9a904d08b0d.png"
 				},
 				{
-					"__comment__": "Pagination 1 Panel",
-					"name": "Panel_1",
+					"__comment__": "Pagination 4 Panel",
+					"name": "Panel_4",
 					"type": "Image",
 					"x": "0",
 					"y": "0",
 					"width": "1920",
 					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-12/729f5bea-c92b-4813-be99-0a68b470b95b.png",
-					"opacity": "1"
-				},
-				{
-					"__comment__": "Pagination 2 Panel",
-					"name": "Panel_2",
-					"type": "Image",
-					"x": "0",
-					"y": "0",
-					"width": "1920",
-					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-12/8c90eeb8-7274-46c7-b6a8-639014868ef9.png",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/b0545ad4-f55f-47fb-8e47-5a8213a07b77.png",
 					"opacity": "0"
 				},
 				{
@@ -109,24 +98,41 @@
 					"y": "0",
 					"width": "1920",
 					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-12/2ca18549-c665-4171-ad30-b71c17abb81a.png",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/1eb744c8-15ec-4d18-b9d3-4b6f5c70c790.png",
 					"opacity": "0"
 				},
 				{
-					"__comment__": "Pagination 4 Panel",
-					"name": "Panel_4",
+					"__comment__": "Pagination 2 Panel",
+					"name": "Panel_2",
 					"type": "Image",
 					"x": "0",
 					"y": "0",
 					"width": "1920",
 					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-12/aca9ba13-ecda-4590-897d-b9bf2ffe88fc.png",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/e248ae4c-0874-4f53-ae71-6263122344c2.png",
 					"opacity": "0"
+				},
+				{
+					"__comment__": "Pagination 1 Panel",
+					"name": "Panel_1",
+					"type": "Image",
+					"x": "0",
+					"y": "0",
+					"width": "1920",
+					"height": "1080",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/3a13e09b-6b40-4d53-91b8-ef8742dbfbc7.png",
+					"opacity": "1"
 				}
 			],
 			"behaviors": {
 				"Button_1": {
 					"onFocusGained": [
+						{
+                            "host":"trackCustomEvent",
+                             "category":"other",
+                            "name":"Panel_1",
+                            "value":"Button_1"
+                        },
 						{
 							"host": "setAttribute",
 							"name": "Panel_1",
@@ -170,10 +176,16 @@
 				"Button_2": {
 					"onFocusGained": [
 						{
+                            "host":"trackCustomEvent",
+                             "category":"other",
+                            "name":"Panel_2",
+                            "value":"Button_2"
+                        },
+						{
 							"host": "setAttribute",
 							"name": "Panel_1",
 							"key": "opacity",
-							"value": 0
+							"value": 1
 						},
 						{
 							"host": "setAttribute",
@@ -218,6 +230,12 @@
 				"Button_3": {
 					"onFocusGained": [
 						{
+                            "host":"trackCustomEvent",
+                             "category":"other",
+                            "name":"Panel_3",
+                            "value":"Button_3"
+                        },
+						{
 							"host": "setAttribute",
 							"name": "Panel_1",
 							"key": "opacity",
@@ -227,7 +245,7 @@
 							"host": "setAttribute",
 							"name": "Panel_2",
 							"key": "opacity",
-							"value": 0
+							"value": 1
 						},
 						{
 							"host": "setAttribute",
@@ -284,6 +302,12 @@
 				"Button_4": {
 					"onFocusGained": [
 						{
+                            "host":"trackCustomEvent",
+                             "category":"other",
+                            "name":"Panel_4",
+                            "value":"Button_4"
+                        },
+						{
 							"host": "setAttribute",
 							"name": "Panel_1",
 							"key": "opacity",
@@ -299,7 +323,7 @@
 							"host": "setAttribute",
 							"name": "Panel_3",
 							"key": "opacity",
-							"value": 0
+							"value": 1
 						},
 						{
 							"host": "setAttribute",
