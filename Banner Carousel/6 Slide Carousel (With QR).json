@@ -16,28 +16,6 @@
 					"focusable": true
 				},
 				{
-					"__comment__": "DON'T REPLACE. Replay icon over thumbnail.",
-					"name": "Replay_Video_Icon",
-					"type": "Image",
-					"x": "110",
-					"y": "217",
-					"width": "1150",
-					"height": "647",
-					"image_url": "https://media.truex.com/image_assets/2020-03-16/ae7a7720-1074-4168-9c7d-6bee1fb477a8.png",
-					"opacity": "0"
-				},
-				{
-					"__comment__": "Replay Thumbnail image for video",
-					"name": "Replay_Video_Thumbnail",
-					"type": "Image",
-					"x": "110",
-					"y": "217",
-					"width": "1150",
-					"height": "647",
-					"image_url": "https://media.truex.com/video_assets/2020-03-11/5c270a52-a61f-4e5f-b178-da2be591c15e.jpg",
-					"opacity": "0"
-				},
-				{
 					"__comment__": "Main video in unit",
 					"name": "Video_Player",
 					"type": "Video",
@@ -51,7 +29,19 @@
 					"fullscreen": false,
 					"focusable": false,
 					"can_be_focused_by_default": false,
+					"staticVideoImageSrc": "https://media.truex.com/video_assets/2020-03-11/5c270a52-a61f-4e5f-b178-da2be591c15e.jpg",
 					"src": "https://media.truex.com/video_assets/2020-03-11/a9651d02-42e1-4c71-9456-3972b6bbba2d_ottPreset.mp4"
+				},
+				{
+					"__comment__": "Video Highlight",
+					"name": "Video_Background",
+					"type": "Rectangle",
+					"x": "90",
+					"y": "197",
+					"width": "1191",
+					"height": "687",
+					"opacity": "0",
+					"color": "0xffffffff"
 				},
 				{
 					"__comment__": "DON'T REPLACE.Transparent button.",
@@ -171,7 +161,7 @@
 					"y": "264",
 					"width": "428",
 					"height": "428",
-					"image_url": "https://media.truex.com/image_assets/2020-03-10/1c988192-a21b-42d0-8720-0b4b1b82c9ae.png",
+					"image_url": "https://media.truex.com/image_assets/2020-03-23/ec43f4cf-9864-490d-a1e6-18cf1ed996db.jpg",
 					"opacity": "1",
 					"focusable": false
 				},
@@ -186,83 +176,83 @@
 					"image_url": "https://media.truex.com/image_assets/2020-03-23/54efc323-48cf-4c80-bdf1-d7f81a8f39f9.png",
 					"opacity": "1",
 					"focusable": false
-                },
-				{
-					"__comment__": "Video highlight panel",
-					"name": "Panel_1",
-					"type": "Image",
-					"x": "0",
-					"y": "0",
-					"width": "1920",
-					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-11/d54eb736-58a1-4ee6-829c-e49cdab49564.png",
-					"opacity": "0"
 				},
 				{
 					"__comment__": "Pagination 1 Panel",
-					"name": "Panel_2",
+					"name": "Panel_1",
 					"type": "Image",
-					"x": "0",
+					"x": "1280",
 					"y": "0",
-					"width": "1920",
+					"width": "640",
 					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-11/698109cb-764b-44d0-bb11-76cf13f58bc8.png",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/1f8e4574-6a43-43b6-810e-59f0ce1f4d01.png",
 					"opacity": "1"
 				},
 				{
 					"__comment__": "Pagination 2 Panel",
-					"name": "Panel_3",
+					"name": "Panel_2",
 					"type": "Image",
-					"x": "0",
+					"x": "1280",
 					"y": "0",
-					"width": "1920",
+					"width": "640",
 					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-11/473b0058-9b53-4154-8faa-c2e015e23978.png",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/f1b4dbc7-eea0-463d-a858-acd7fdcc9148.png",
 					"opacity": "0"
 				},
 				{
 					"__comment__": "Pagination 3 Panel",
-					"name": "Panel_4",
+					"name": "Panel_3",
 					"type": "Image",
-					"x": "0",
+					"x": "1280",
 					"y": "0",
-					"width": "1920",
+					"width": "640",
 					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-11/e4c110ad-eab6-4341-8432-5020bf36462d.png",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/b89f6199-36f7-4bae-b891-d104d98e6ea9.png",
 					"opacity": "0"
 				},
 				{
 					"__comment__": "Pagination 4 Panel",
-					"name": "Panel_5",
+					"name": "Panel_4",
 					"type": "Image",
-					"x": "0",
+					"x": "1280",
 					"y": "0",
-					"width": "1920",
+					"width": "640",
 					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-11/3af3c4e4-0c61-441b-9f1e-257c6ba84c6e.png",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/86fdd3d1-a442-476e-b19a-462e8b48d277.png",
 					"opacity": "0"
 				},
 				{
 					"__comment__": "Pagination 5 Panel",
-					"name": "Panel_6",
+					"name": "Panel_5",
 					"type": "Image",
-					"x": "0",
+					"x": "1280",
 					"y": "0",
-					"width": "1920",
+					"width": "640",
 					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-11/bfecd7e7-2709-416f-b8fa-faa02841d917.png",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/7b84279e-56ea-4e6c-99ba-06252f06e072.png",
 					"opacity": "0"
 				},
 				{
 					"__comment__": "Pagination 6 Panel",
-					"name": "Panel_7",
+					"name": "Panel_6",
+					"type": "Image",
+					"x": "1280",
+					"y": "0",
+					"width": "640",
+					"height": "1080",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/edd9dbb5-cea1-4f5d-a28a-7d290040a2ba.png",
+					"opacity": "0"
+				},
+				{
+					"__comment__": "Consistent Background",
+					"name": "Background",
 					"type": "Image",
 					"x": "0",
 					"y": "0",
 					"width": "1920",
 					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-11/e2a3852e-7f8b-4adf-b5a0-0624ca582e7f.png",
-					"opacity": "0"
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/47ff21d2-591c-454b-bf34-a4f1079fbdf0.png",
+					"opacity": "1"
 				}
 			],
 			"behaviors": {
@@ -276,6 +266,12 @@
 						{
 							"host": "focusElement",
 							"name": "Interact_Button"
+						},
+						{
+							"host": "setAttribute",
+							"name": "Video_Background",
+							"key": "opacity",
+							"value": 0
 						}
 					],
 					"onselect": [
@@ -338,24 +334,6 @@
 						},
 						{
 							"host": "setAttribute",
-							"name": "replayIcon",
-							"key": "opacity",
-							"value": 0
-						},
-						{
-							"host": "setAttribute",
-							"name": "Replay_Video_Icon",
-							"key": "opacity",
-							"value": 0
-						},
-						{
-							"host": "setAttribute",
-							"name": "Replay_Video_Thumbnail",
-							"key": "opacity",
-							"value": 0
-						},
-						{
-							"host": "setAttribute",
 							"name": "Video_Player",
 							"key": "opacity",
 							"value": 1
@@ -377,6 +355,12 @@
 					],
 					"onFocusGained": [
 						{
+                            "host":"trackCustomEvent",
+                            "category":"other",
+                            "name":"Panel_1_VideoHighlight",
+                            "value":"Button_1"
+                        },
+						{
 							"host": "setAttribute",
 							"name": "Panel_1",
 							"key": "opacity",
@@ -414,15 +398,9 @@
 						},
 						{
 							"host": "setAttribute",
-							"name": "Panel_7",
+							"name": "Video_Background",
 							"key": "opacity",
-							"value": 0
-						},
-						{
-							"host": "setAttribute",
-							"name": "Replay_Video_Icon",
-							"key": "src",
-							"value": "https://media.truex.com/image_assets/2020-03-16/ae7a7720-1074-4168-9c7d-6bee1fb477a8.png"
+							"value": 1
 						},
 						{
 							"host": "setAttribute",
@@ -440,37 +418,43 @@
 						},
 						{
 							"host": "setAttribute",
-							"name": "Replay_Video_Icon",
-							"key": "src",
-							"value": "https://media.truex.com/image_assets/2020-03-16/53166efd-713b-4f0c-a92a-5f646320385e.png"
-						},
-						{
-							"host": "setAttribute",
 							"name": "Panel_1",
 							"key": "opacity",
 							"value": 0
 						},
 						{
 							"host": "setAttribute",
-							"name": "Panel_2",
+							"name": "Panel_1",
 							"key": "opacity",
 							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Video_Background",
+							"key": "opacity",
+							"value": 0
 						}
 					]
 				},
 				"Button_2": {
 					"onFocusGained": [
 						{
+                            "host":"trackCustomEvent",
+                            "category":"other",
+                            "name":"Panel_2",
+                            "value":"Button_2"
+                        },
+						{
 							"host": "setAttribute",
 							"name": "Panel_1",
 							"key": "opacity",
-							"value": 0
+							"value": 1
 						},
 						{
 							"host": "setAttribute",
 							"name": "Panel_2",
 							"key": "opacity",
-							"value": 1
+							"value": 0
 						},
 						{
 							"host": "setAttribute",
@@ -493,12 +477,6 @@
 						{
 							"host": "setAttribute",
 							"name": "Panel_6",
-							"key": "opacity",
-							"value": 0
-						},
-						{
-							"host": "setAttribute",
-							"name": "Panel_7",
 							"key": "opacity",
 							"value": 0
 						},
@@ -526,6 +504,12 @@
 				},
 				"Button_3": {
 					"onFocusGained": [
+							{
+                            "host":"trackCustomEvent",
+                            "category":"other",
+                            "name":"Panel_3",
+                            "value":"Button_3"
+                        },
 						{
 							"host": "setAttribute",
 							"name": "Panel_1",
@@ -536,13 +520,13 @@
 							"host": "setAttribute",
 							"name": "Panel_2",
 							"key": "opacity",
-							"value": 0
+							"value": 1
 						},
 						{
 							"host": "setAttribute",
 							"name": "Panel_3",
 							"key": "opacity",
-							"value": 1
+							"value": 0
 						},
 						{
 							"host": "setAttribute",
@@ -559,12 +543,6 @@
 						{
 							"host": "setAttribute",
 							"name": "Panel_6",
-							"key": "opacity",
-							"value": 0
-						},
-						{
-							"host": "setAttribute",
-							"name": "Panel_7",
 							"key": "opacity",
 							"value": 0
 						},
@@ -611,6 +589,12 @@
 				"Button_4": {
 					"onFocusGained": [
 						{
+                            "host":"trackCustomEvent",
+                            "category":"other",
+                            "name":"Panel_4",
+                            "value":"Button_4"
+                        },
+						{
 							"host": "setAttribute",
 							"name": "Panel_1",
 							"key": "opacity",
@@ -626,13 +610,13 @@
 							"host": "setAttribute",
 							"name": "Panel_3",
 							"key": "opacity",
-							"value": 0
+							"value": 1
 						},
 						{
 							"host": "setAttribute",
 							"name": "Panel_4",
 							"key": "opacity",
-							"value": 1
+							"value": 0
 						},
 						{
 							"host": "setAttribute",
@@ -643,12 +627,6 @@
 						{
 							"host": "setAttribute",
 							"name": "Panel_6",
-							"key": "opacity",
-							"value": 0
-						},
-						{
-							"host": "setAttribute",
-							"name": "Panel_7",
 							"key": "opacity",
 							"value": 0
 						},
@@ -701,6 +679,12 @@
 				"Button_5": {
 					"onFocusGained": [
 						{
+                            "host":"trackCustomEvent",
+                            "category":"other",
+                            "name":"Panel_5",
+                            "value":"Button_5"
+                        },
+						{
 							"host": "setAttribute",
 							"name": "Panel_1",
 							"key": "opacity",
@@ -722,23 +706,17 @@
 							"host": "setAttribute",
 							"name": "Panel_4",
 							"key": "opacity",
-							"value": 0
+							"value": 1
 						},
 						{
 							"host": "setAttribute",
 							"name": "Panel_5",
 							"key": "opacity",
-							"value": 1
-						},
-						{
-							"host": "setAttribute",
-							"name": "Panel_6",
-							"key": "opacity",
 							"value": 0
 						},
 						{
 							"host": "setAttribute",
-							"name": "Panel_7",
+							"name": "Panel_6",
 							"key": "opacity",
 							"value": 0
 						},
@@ -797,6 +775,12 @@
 				"Button_6": {
 					"onFocusGained": [
 						{
+                            "host":"trackCustomEvent",
+                            "category":"other",
+                            "name":"Panel_6",
+                            "value":"Button_6"
+                        },
+						{
 							"host": "setAttribute",
 							"name": "Panel_1",
 							"key": "opacity",
@@ -824,17 +808,11 @@
 							"host": "setAttribute",
 							"name": "Panel_5",
 							"key": "opacity",
-							"value": 0
-						},
-						{
-							"host": "setAttribute",
-							"name": "Panel_6",
-							"key": "opacity",
 							"value": 1
 						},
 						{
 							"host": "setAttribute",
-							"name": "Panel_7",
+							"name": "Panel_6",
 							"key": "opacity",
 							"value": 0
 						},
@@ -921,6 +899,12 @@
 				"Button_7": {
 					"onFocusGained": [
 						{
+                            "host":"trackCustomEvent",
+                            "category":"other",
+                            "name":"Panel_7_QR",
+                            "value":"Button_7"
+                        },
+						{
 							"host": "setAttribute",
 							"name": "Panel_1",
 							"key": "opacity",
@@ -953,12 +937,6 @@
 						{
 							"host": "setAttribute",
 							"name": "Panel_6",
-							"key": "opacity",
-							"value": 0
-						},
-						{
-							"host": "setAttribute",
-							"name": "Panel_7",
 							"key": "opacity",
 							"value": 1
 						},
@@ -1097,18 +1075,6 @@
 							"name": "Interact_Button",
 							"key": "opacity",
 							"value": "0"
-						},
-						{
-							"host": "setAttribute",
-							"name": "Replay_Video_Thumbnail",
-							"key": "opacity",
-							"value": "1"
-						},
-						{
-							"host": "setAttribute",
-							"name": "Replay_Video_Icon",
-							"key": "opacity",
-							"value": "1"
 						}
 					]
 				}
