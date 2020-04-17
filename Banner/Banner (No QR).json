@@ -167,6 +167,12 @@
 					],
 					"onFocusGained": [
 						{
+                            "host": "trackCustomEvent",
+                            "category": "other",
+                            "name": "Panel_1_VideoHighlight",
+                            "value": "Button_1"
+                        },
+						{
 							"host": "setAttribute",
 							"name": "Video_Background",
 							"key": "opacity",
@@ -190,6 +196,12 @@
 				},
 				"Button_2": {
 					"onFocusGained": [
+						{
+                            "host": "trackCustomEvent",
+                            "category": "other",
+                            "name": "Panel_2",
+                            "value": "Button_2"
+                        },
 						{
 							"host": "setAttribute",
 							"name": "Video_Background",
