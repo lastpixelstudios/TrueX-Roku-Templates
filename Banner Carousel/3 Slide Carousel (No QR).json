@@ -95,30 +95,6 @@
 					"hover_effect": false
 				},
 				{
-					"__comment__": "Main QR code in unit.",
-					"name": "QR_Code",
-					"type": "Button",
-					"x": "1920",
-					"y": "264",
-					"width": "428",
-					"height": "428",
-					"image_url": "https://media.truex.com/image_assets/2020-03-10/1c988192-a21b-42d0-8720-0b4b1b82c9ae.png",
-					"opacity": "1",
-					"focusable": false
-				},
-				{
-					"__comment__": "Scan image under QR and QR background.",
-					"name": "Scan_Image",
-					"type": "Button",
-					"x": "1920",
-					"y": "234",
-					"width": "480",
-					"height": "604",
-					"image_url": "https://media.truex.com/image_assets/2020-03-23/54efc323-48cf-4c80-bdf1-d7f81a8f39f9.png",
-					"opacity": "1",
-					"focusable": false
-				},
-				{
 					"__comment__": "Left arrow icon",
 					"name": "Left_Arrow",
 					"type": "Image",
@@ -168,7 +144,7 @@
 					"y": "0",
 					"width": "640",
 					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-30/edd9dbb5-cea1-4f5d-a28a-7d290040a2ba.png",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/b89f6199-36f7-4bae-b891-d104d98e6ea9.png",
 					"opacity": "0"
 				},
 				{
@@ -425,28 +401,6 @@
 							"name": "Button_4",
 							"key": "focusable",
 							"value": true
-						},
-						{
-							"host": "animateElement",
-							"name": "QR_Code",
-							"attributes": {
-								"position": [
-									1920,
-									264
-								]
-							},
-							"duration": 0.5
-						},
-						{
-							"host": "animateElement",
-							"name": "Scan_Image",
-							"attributes": {
-								"position": [
-									1920,
-									234
-								]
-							},
-							"duration": 0.5
 						}
 					],
 					"onFocusLost": [
@@ -507,28 +461,6 @@
 							"name": "Button_4",
 							"key": "focusable",
 							"value": true
-						},
-						{
-							"host": "animateElement",
-							"name": "QR_Code",
-							"attributes": {
-								"position": [
-									1376,
-									264
-								]
-							},
-							"duration": 0.5
-						},
-						{
-							"host": "animateElement",
-							"name": "Scan_Image",
-							"attributes": {
-								"position": [
-									1350,
-									234
-								]
-							},
-							"duration": 0.5
 						}
 					],
 					"onFocusLost": [
