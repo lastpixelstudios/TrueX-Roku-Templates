@@ -74,31 +74,39 @@
 					"image_url": "https://media.truex.com/image_assets/2020-03-23/54efc323-48cf-4c80-bdf1-d7f81a8f39f9.png",
 					"opacity": "1",
 					"focusable": false
-                },
-				{
-					"name": "Panel_1",
-					"type": "Image",
-					"x": "0",
-					"y": "0",
-					"width": "1920",
-					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-12/729f5bea-c92b-4813-be99-0a68b470b95b.png",
-					"opacity": "1"
 				},
 				{
+					"__comment__": "Pagination 2 Panel",
 					"name": "Panel_2",
 					"type": "Image",
 					"x": "0",
 					"y": "0",
 					"width": "1920",
 					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-12/8c90eeb8-7274-46c7-b6a8-639014868ef9.png",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/1fce03ba-5a67-4dac-af85-c590ad877e5c.png",
 					"opacity": "0"
+				},
+				{
+					"__comment__": "Pagination 1 Panel",
+					"name": "Panel_1",
+					"type": "Image",
+					"x": "0",
+					"y": "0",
+					"width": "1920",
+					"height": "1080",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/3a13e09b-6b40-4d53-91b8-ef8742dbfbc7.png",
+					"opacity": "1"
 				}
 			],
 			"behaviors": {
 				"Button_1": {
 					"onFocusGained": [
+						{
+							"host": "trackCustomEvent",
+							"category": "other",
+							"name": "Panel_1",
+							"value": "Button_1"
+						},
 						{
 							"host": "setAttribute",
 							"name": "Panel_1",
@@ -142,10 +150,16 @@
 				"Button_2": {
 					"onFocusGained": [
 						{
+							"host": "trackCustomEvent",
+							"category": "other",
+							"name": "Panel_2_QR",
+							"value": "Button_2"
+						},
+						{
 							"host": "setAttribute",
 							"name": "Panel_1",
 							"key": "opacity",
-							"value": 0
+							"value": 1
 						},
 						{
 							"host": "setAttribute",
