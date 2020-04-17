@@ -4,7 +4,6 @@
 			"name": "main_card",
 			"elements": [
 				{
-					"__comment__": "Pagination Button 1",
 					"name": "Button_1",
 					"type": "Button",
 					"x": "939",
@@ -18,7 +17,6 @@
 					"hover_effect": false
 				},
 				{
-					"__comment__": "Pagination Button 2",
 					"name": "Button_2",
 					"type": "Button",
 					"x": "975",
@@ -32,7 +30,6 @@
 					"hover_effect": false
 				},
 				{
-					"__comment__": "Left arrow icon",
 					"name": "Left_Arrow",
 					"type": "Image",
 					"x": "874",
@@ -42,7 +39,6 @@
 					"image_url": "https://media.truex.com/image_assets/2020-03-11/17e2ae91-23b2-4558-99c9-c9422959d0df.png"
 				},
 				{
-					"__comment__": "Right arrow icon",
 					"name": "Right_Arrow",
 					"type": "Image",
 					"x": "1016",
@@ -52,17 +48,6 @@
 					"image_url": "https://media.truex.com/image_assets/2020-03-11/303988b0-8c00-4c36-9fb2-b9a904d08b0d.png"
 				},
 				{
-					"__comment__": "Pagination 1 Panel",
-					"name": "Panel_1",
-					"type": "Image",
-					"x": "0",
-					"y": "0",
-					"width": "1920",
-					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-12/729f5bea-c92b-4813-be99-0a68b470b95b.png",
-					"opacity": "1"
-				},
-				{
 					"__comment__": "Pagination 2 Panel",
 					"name": "Panel_2",
 					"type": "Image",
@@ -70,13 +55,30 @@
 					"y": "0",
 					"width": "1920",
 					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-12/8c90eeb8-7274-46c7-b6a8-639014868ef9.png",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/e248ae4c-0874-4f53-ae71-6263122344c2.png",
 					"opacity": "0"
+				},
+				{
+					"__comment__": "Pagination 1 Panel",
+					"name": "Panel_1",
+					"type": "Image",
+					"x": "0",
+					"y": "0",
+					"width": "1920",
+					"height": "1080",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/3a13e09b-6b40-4d53-91b8-ef8742dbfbc7.png",
+					"opacity": "1"
 				}
 			],
 			"behaviors": {
 				"Button_1": {
 					"onFocusGained": [
+						{
+							"host": "trackCustomEvent",
+							"category": "other",
+							"name": "Panel_1",
+							"value": "Button_1"
+						},
 						{
 							"host": "setAttribute",
 							"name": "Panel_1",
@@ -108,10 +110,16 @@
 				"Button_2": {
 					"onFocusGained": [
 						{
+							"host": "trackCustomEvent",
+							"category": "other",
+							"name": "Panel_2",
+							"value": "Button_2"
+						},
+						{
 							"host": "setAttribute",
 							"name": "Panel_1",
 							"key": "opacity",
-							"value": 0
+							"value": 1
 						},
 						{
 							"host": "setAttribute",
