@@ -170,11 +170,11 @@
 				"Button_1": {
 					"onFocusGained": [
 						{
-                            "host":"trackCustomEvent",
-                             "category":"other",
-                            "name":"Panel_1_Video1",
-                            "value":"Button_1"
-                        },
+              "host":"trackCustomEvent",
+               "category":"other",
+               "name":"Panel_1_Video1",
+               "value":"Button_1"
+            },
 						{
 							"host": "setAttribute",
 							"name": "Button_1",
