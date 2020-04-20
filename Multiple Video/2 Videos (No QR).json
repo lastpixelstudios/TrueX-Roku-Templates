@@ -4,6 +4,7 @@
 			"name": "main_card",
 			"elements": [
 				{
+					"__comment__": "Replay Thumbnail image for Video_1 (video being played)",
 					"name": "Video_1_Thumbnail",
 					"type": "Image",
 					"x": "110",
@@ -14,6 +15,7 @@
 					"opacity": "0"
 				},
 				{
+					"__comment__": "Video for this step",
 					"name": "Video_1",
 					"type": "Video",
 					"x": "110",
@@ -37,6 +39,7 @@
 					"opacity": 0
 				},
 				{
+					"__comment__": "DON'T REPLACE. Replay icon over thumbnail.",
 					"name": "Now_Playing_Thumbnail",
 					"type": "Image",
 					"x": "459",
@@ -47,6 +50,7 @@
 					"opacity": 1
 				},
 				{
+					"__comment__": "DON'T REPLACE. Now Playing overlay on thumbnails.",
 					"name": "Play_Thumbnail",
 					"type": "Image",
 					"x": 459,
@@ -57,6 +61,7 @@
 					"opacity": 0
 				},
 				{
+					"__comment__": "Video thumbnail 1",
 					"name": "Button_1",
 					"type": "Button",
 					"x": "459",
@@ -69,6 +74,7 @@
 					"hover_effect": false
 				},
 				{
+					"__comment__": "Video thumbnail 2",
 					"name": "Button_2",
 					"type": "Button",
 					"x": "695",
@@ -81,30 +87,7 @@
 					"hover_effect": false
 				},
 				{
-					"name": "Button_3",
-					"type": "Button",
-					"x": "1283",
-					"y": "779",
-					"width": "25",
-					"height": "119",
-					"image_url": "https://media.truex.com/image_assets/2020-03-12/f04e4f24-7268-4c36-8baa-ff3be977fec2.png",
-					"focusable": false,
-					"guide": "right,bottom",
-					"hover_effect": false
-				},
-				{
-					"name": "Button_4",
-					"type": "Button",
-					"x": "1331",
-					"y": "779",
-					"width": "25",
-					"height": "119",
-					"image_url": "https://media.truex.com/image_assets/2020-03-12/f04e4f24-7268-4c36-8baa-ff3be977fec2.png",
-					"focusable": false,
-					"guide": "right,bottom",
-					"hover_effect": false
-				},
-				{
+					"__comment__": "Background for border around highlighted thumbnail.",
 					"name": "Thumbnail_Highlight",
 					"type": "Image",
 					"x": "459",
@@ -114,13 +97,14 @@
 					"image_url": "https://media.truex.com/image_assets/2020-03-13/06d36221-51b0-4cec-9426-1b84702f145a.png"
 				},
 				{
-					"name": "Panel_1",
+					"__comment__": "Background image",
+					"name": "Background",
 					"type": "Image",
 					"x": "0",
 					"y": "0",
 					"width": "1920",
 					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-16/1fafe127-c35d-44df-821d-02a167729b46.png",
+					"image_url": "https://media.truex.com/image_assets/2020-03-31/520853b1-9442-42ae-97e8-a551e61590da.png",
 					"opacity": "1"
 				}
 			],
@@ -185,6 +169,12 @@
 				},
 				"Button_1": {
 					"onFocusGained": [
+						{
+                            "host":"trackCustomEvent",
+                             "category":"other",
+                            "name":"Panel_1_Video1",
+                            "value":"Button_1"
+                        },
 						{
 							"host": "setAttribute",
 							"name": "Button_1",
@@ -272,6 +262,12 @@
 					],
 					"onFocusGained": [
 						{
+                            "host":"trackCustomEvent",
+                            "category":"other",
+                            "name":"Panel_2_Video2",
+                            "value":"Button_2"
+                        },
+						{
 							"host": "setAttribute",
 							"name": "Button_1",
 							"key": "focusable",
@@ -341,6 +337,7 @@
 			"name": "step_2",
 			"elements": [
 				{
+					"__comment__": "Replay Thumbnail image for Video_2 (video being played)",
 					"name": "Video_2_Thumbnail",
 					"type": "Image",
 					"x": "110",
@@ -351,6 +348,7 @@
 					"opacity": "0"
 				},
 				{
+					"__comment__": "Video for this step",
 					"name": "Video_2",
 					"type": "Video",
 					"x": "110",
@@ -364,6 +362,7 @@
 					"src": "https://media.truex.com/video_assets/2019-03-11/b43edf49-a7cc-4eca-9d54-5b89b7682cef_large.mp4"
 				},
 				{
+					"__comment__": "DON'T REPLACE. Replay icon over thumbnail.",
 					"name": "Replay_Thumbnail",
 					"type": "Image",
 					"x": "695",
@@ -374,6 +373,7 @@
 					"opacity": 0
 				},
 				{
+					"__comment__": "DON'T REPLACE. Now Playing overlay on thumbnails.",
 					"name": "Now_Playing_Thumbnail",
 					"type": "Image",
 					"x": "695",
@@ -384,6 +384,7 @@
 					"opacity": 1
 				},
 				{
+					"__comment__": "DON'T REPLACE. Play icon over video thumbnails",
 					"name": "Play_Thumbnail",
 					"type": "Image",
 					"x": "695",
@@ -394,6 +395,7 @@
 					"opacity": 0
 				},
 				{
+					"__comment__": "Video thumbnail 1",
 					"name": "Button_1",
 					"type": "Button",
 					"x": "459",
@@ -406,6 +408,7 @@
 					"hover_effect": false
 				},
 				{
+					"__comment__": "Video thumbnail 2",
 					"name": "Button_2",
 					"type": "Button",
 					"x": "695",
@@ -418,30 +421,7 @@
 					"hover_effect": false
 				},
 				{
-					"name": "Button_3",
-					"type": "Button",
-					"x": "1283",
-					"y": "779",
-					"width": "25",
-					"height": "119",
-					"image_url": "https://media.truex.com/image_assets/2020-03-12/f04e4f24-7268-4c36-8baa-ff3be977fec2.png",
-					"focusable": false,
-					"guide": "right,bottom",
-					"hover_effect": false
-				},
-				{
-					"name": "Button_4",
-					"type": "Button",
-					"x": "1331",
-					"y": "779",
-					"width": "25",
-					"height": "119",
-					"image_url": "https://media.truex.com/image_assets/2020-03-12/f04e4f24-7268-4c36-8baa-ff3be977fec2.png",
-					"focusable": false,
-					"guide": "right,bottom",
-					"hover_effect": false
-				},
-				{
+					"__comment__": "Background for border around highlighted thumbnail.",
 					"name": "Thumbnail_Highlight",
 					"type": "Image",
 					"x": "695",
@@ -451,13 +431,14 @@
 					"image_url": "https://media.truex.com/image_assets/2020-03-13/06d36221-51b0-4cec-9426-1b84702f145a.png"
 				},
 				{
-					"name": "Panel_1",
+					"__comment__": "Background image",
+					"name": "Background",
 					"type": "Image",
 					"x": "0",
 					"y": "0",
 					"width": "1920",
 					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-16/1fafe127-c35d-44df-821d-02a167729b46.png",
+					"image_url": "https://media.truex.com/image_assets/2020-03-31/520853b1-9442-42ae-97e8-a551e61590da.png",
 					"opacity": "1"
 				}
 			],
@@ -528,6 +509,12 @@
 						}
 					],
 					"onFocusGained": [
+						{
+                            "host":"trackCustomEvent",
+                            "category":"other",
+                            "name":"Panel_1_Video1",
+                            "value":"Button_1"
+                        },
 						{
 							"host": "setAttribute",
 							"name": "Button_1",
@@ -626,6 +613,12 @@
 						}
 					],
 					"onFocusGained": [
+						{
+                            "host":"trackCustomEvent",
+                            "category":"other",
+                            "name":"Panel_2_Video2",
+                            "value":"Button_2"
+                        },
 						{
 							"host": "setAttribute",
 							"name": "Button_1",
