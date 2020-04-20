@@ -75,7 +75,7 @@
 					"hover_effect": false
 				},
 				{
-					"__comment__": "Video thumbnail 1",
+					"__comment__": "Video thumbnail 2",
 					"name": "Button_2",
 					"type": "Button",
 					"x": "695",
@@ -131,7 +131,7 @@
 					"y": "277",
 					"width": "428",
 					"height": "428",
-					"image_url": "https://media.truex.com/image_assets/2020-03-10/1c988192-a21b-42d0-8720-0b4b1b82c9ae.png",
+					"image_url": "https://media.truex.com/image_assets/2020-03-27/3c9a5881-8d8e-42dc-923b-8e269c93f714.png",
 					"opacity": "0",
 					"focusable": false
 				},
@@ -148,37 +148,48 @@
 					"focusable": false
 				},
 				{
-					"__comment__": "Panel while navigating thumbnails",
-					"name": "Panel_1",
-					"type": "Image",
-					"x": "0",
-					"y": "0",
-					"width": "1920",
-					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-12/a57df175-e436-4784-8b5a-e3b2d12abb95.png",
-					"opacity": "1"
-				},
-				{
-					"__comment__": "Panel while CTA is highlighted",
-					"name": "Panel_2",
-					"type": "Image",
-					"x": "0",
-					"y": "0",
-					"width": "1920",
-					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-12/f617ba7b-9a9d-4cb6-9643-ed5e50ac4baf.png",
-					"opacity": "0"
-				},
-				{
 					"__comment__": "QR Code panel.",
 					"name": "Panel_3",
 					"type": "Image",
+					"x": "1280",
+					"y": "0",
+					"width": "640",
+					"height": "1080",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/81840dfe-aaca-433a-9436-213d88b056cf.png",
+					"opacity": "0"
+				},
+				{
+					"__comment__": "CTA active panel",
+					"name": "Panel_2",
+					"type": "Image",
+					"x": "1280",
+					"y": "0",
+					"width": "640",
+					"height": "1080",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/80aa992a-e2c3-443d-ba65-193f85ec4e56.png",
+					"opacity": "0"
+				},
+				{
+					"__comment__": "Static panel. Video and CTA not highlighted.",
+					"name": "Panel_1",
+					"type": "Image",
+					"x": "1280",
+					"y": "0",
+					"width": "640",
+					"height": "1080",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/15c25faa-5866-4c6e-916f-cb7eeb924e79.png",
+					"opacity": "1"
+				},
+				{
+					"__comment__": "Background image",
+					"name": "Background",
+					"type": "Image",
 					"x": "0",
 					"y": "0",
 					"width": "1920",
 					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-12/abb286fb-f136-4da6-8b48-97779ad4abbe.png",
-					"opacity": "0"
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/47ff21d2-591c-454b-bf34-a4f1079fbdf0.png",
+					"opacity": "1"
 				}
 			],
 			"behaviors": {
@@ -242,6 +253,12 @@
 				},
 				"Button_1": {
 					"onFocusGained": [
+						{
+                            "host":"trackCustomEvent",
+                             "category":"other",
+                            "name":"Panel_1_Video1",
+                            "value":"Button_1"
+                        },
 						{
 							"host": "setAttribute",
 							"name": "Panel_1",
@@ -359,6 +376,12 @@
 					],
 					"onFocusGained": [
 						{
+                            "host":"trackCustomEvent",
+                             "category":"other",
+                            "name":"Panel_2_Video2",
+                            "value":"Button_2"
+                        },
+						{
 							"host": "setAttribute",
 							"name": "Panel_1",
 							"key": "opacity",
@@ -466,6 +489,12 @@
 						}
 					],
 					"onFocusGained": [
+						{
+                            "host":"trackCustomEvent",
+                             "category":"other",
+                            "name":"Panel_3_CTA",
+                            "value":"Button_3"
+                        },
 						{
 							"host": "setAttribute",
 							"name": "Panel_1",
@@ -579,6 +608,12 @@
 				"Button_4": {
 					"onFocusGained": [
 						{
+                            "host":"trackCustomEvent",
+                             "category":"other",
+                            "name":"Panel_4_CTA",
+                            "value":"Button_4"
+                        },
+						{
 							"host": "setAttribute",
 							"name": "Panel_1",
 							"key": "opacity",
@@ -676,7 +711,7 @@
 			"name": "step_2",
 			"elements": [
 				{
-					"__comment__": "Replay Thumbnail image for Video_1 (video being played)",
+					"__comment__": "Replay Thumbnail image for Video_2 (video being played)",
 					"name": "Video_2_Thumbnail",
 					"type": "Image",
 					"x": "110",
@@ -803,7 +838,7 @@
 					"y": "277",
 					"width": "428",
 					"height": "428",
-					"image_url": "https://media.truex.com/image_assets/2020-03-10/1c988192-a21b-42d0-8720-0b4b1b82c9ae.png",
+					"image_url": "https://media.truex.com/image_assets/2020-03-27/3c9a5881-8d8e-42dc-923b-8e269c93f714.png",
 					"opacity": "0",
 					"focusable": false
 				},
@@ -820,37 +855,48 @@
 					"focusable": false
 				},
 				{
-					"__comment__": "Panel while navigating thumbnails",
-					"name": "Panel_1",
-					"type": "Image",
-					"x": "0",
-					"y": "0",
-					"width": "1920",
-					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-12/a57df175-e436-4784-8b5a-e3b2d12abb95.png",
-					"opacity": "1"
-				},
-				{
-					"__comment__": "Panel while CTA is highlighted",
-					"name": "Panel_2",
-					"type": "Image",
-					"x": "0",
-					"y": "0",
-					"width": "1920",
-					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-12/f617ba7b-9a9d-4cb6-9643-ed5e50ac4baf.png",
-					"opacity": "0"
-				},
-				{
 					"__comment__": "QR Code panel.",
 					"name": "Panel_3",
 					"type": "Image",
+					"x": "1280",
+					"y": "0",
+					"width": "640",
+					"height": "1080",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/81840dfe-aaca-433a-9436-213d88b056cf.png",
+					"opacity": "0"
+				},
+				{
+					"__comment__": "CTA active panel",
+					"name": "Panel_2",
+					"type": "Image",
+					"x": "1280",
+					"y": "0",
+					"width": "640",
+					"height": "1080",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/80aa992a-e2c3-443d-ba65-193f85ec4e56.png",
+					"opacity": "1"
+				},
+				{
+					"__comment__": "Static panel. Video and CTA not highlighted.",
+					"name": "Panel_1",
+					"type": "Image",
+					"x": "1280",
+					"y": "0",
+					"width": "640",
+					"height": "1080",
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/15c25faa-5866-4c6e-916f-cb7eeb924e79.png",
+					"opacity": "0"
+				},
+				{
+					"__comment__": "Background image",
+					"name": "Background",
+					"type": "Image",
 					"x": "0",
 					"y": "0",
 					"width": "1920",
 					"height": "1080",
-					"image_url": "https://media.truex.com/image_assets/2020-03-12/abb286fb-f136-4da6-8b48-97779ad4abbe.png",
-					"opacity": "0"
+					"image_url": "https://media.truex.com/image_assets/2020-03-30/47ff21d2-591c-454b-bf34-a4f1079fbdf0.png",
+					"opacity": "1"
 				}
 			],
 			"behaviors": {
@@ -920,6 +966,12 @@
 						}
 					],
 					"onFocusGained": [
+						{
+                            "host":"trackCustomEvent",
+                             "category":"other",
+                            "name":"Panel_1_Video1",
+                            "value":"Button_1"
+                        },
 						{
 							"host": "setAttribute",
 							"name": "Panel_1",
@@ -1049,6 +1101,12 @@
 					],
 					"onFocusGained": [
 						{
+                            "host":"trackCustomEvent",
+                            "category":"other",
+                            "name":"Panel_2_Video2",
+                            "value":"Button_2"
+                        },
+						{
 							"host": "setAttribute",
 							"name": "Panel_1",
 							"key": "opacity",
@@ -1144,6 +1202,12 @@
 						}
 					],
 					"onFocusGained": [
+						{
+                            "host":"trackCustomEvent",
+                            "category":"other",
+                            "name":"Panel_3_CTA",
+                            "value":"Button_3"
+                        },
 						{
 							"host": "setAttribute",
 							"name": "Panel_1",
@@ -1256,6 +1320,12 @@
 				},
 				"Button_4": {
 					"onFocusGained": [
+						{
+                            "host":"trackCustomEvent",
+                            "category":"other",
+                            "name":"Panel_4_QR",
+                            "value":"Button_4"
+                        },
 						{
 							"host": "setAttribute",
 							"name": "Panel_1",
