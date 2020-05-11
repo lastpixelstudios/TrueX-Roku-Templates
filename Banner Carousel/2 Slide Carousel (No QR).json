@@ -93,7 +93,7 @@
 				},
 				{
 					"__comment__": "Right arrow icon",
-					"name": "Right",
+					"name": "Right_Arrow",
 					"type": "Image",
 					"x": "1648",
 					"y": "854",
