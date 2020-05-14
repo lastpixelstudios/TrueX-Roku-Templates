@@ -89,12 +89,12 @@
 				{
 					"__comment__": "Background for border around highlighted thumbnail.",
 					"name": "Thumbnail_Highlight",
-					"type": "Image",
+					"type": "Rectangle",
 					"x": "459",
 					"y": "769",
 					"width": "232",
 					"height": "139",
-					"image_url": "https://media.truex.com/image_assets/2020-03-13/06d36221-51b0-4cec-9426-1b84702f145a.png"
+					"color": "0xffffffff"
 				},
 				{
 					"__comment__": "Background image",
@@ -170,11 +170,11 @@
 				"Button_1": {
 					"onFocusGained": [
 						{
-              "host":"trackCustomEvent",
-               "category":"other",
-               "name":"Panel_1_Video1",
-               "value":"Button_1"
-            },
+							"host": "trackCustomEvent",
+							"category": "other",
+							"name": "Panel_1_Video1",
+							"value": "Button_1"
+						},
 						{
 							"host": "setAttribute",
 							"name": "Button_1",
@@ -262,11 +262,11 @@
 					],
 					"onFocusGained": [
 						{
-                            "host":"trackCustomEvent",
-                            "category":"other",
-                            "name":"Panel_2_Video2",
-                            "value":"Button_2"
-                        },
+							"host": "trackCustomEvent",
+							"category": "other",
+							"name": "Panel_2_Video2",
+							"value": "Button_2"
+						},
 						{
 							"host": "setAttribute",
 							"name": "Button_1",
@@ -423,12 +423,12 @@
 				{
 					"__comment__": "Background for border around highlighted thumbnail.",
 					"name": "Thumbnail_Highlight",
-					"type": "Image",
+					"type": "Rectangle",
 					"x": "695",
 					"y": "769",
 					"width": "232",
 					"height": "139",
-					"image_url": "https://media.truex.com/image_assets/2020-03-13/06d36221-51b0-4cec-9426-1b84702f145a.png"
+					"color": "0xffffffff"
 				},
 				{
 					"__comment__": "Background image",
@@ -510,11 +510,11 @@
 					],
 					"onFocusGained": [
 						{
-                            "host":"trackCustomEvent",
-                            "category":"other",
-                            "name":"Panel_1_Video1",
-                            "value":"Button_1"
-                        },
+							"host": "trackCustomEvent",
+							"category": "other",
+							"name": "Panel_1_Video1",
+							"value": "Button_1"
+						},
 						{
 							"host": "setAttribute",
 							"name": "Button_1",
@@ -614,11 +614,11 @@
 					],
 					"onFocusGained": [
 						{
-                            "host":"trackCustomEvent",
-                            "category":"other",
-                            "name":"Panel_2_Video2",
-                            "value":"Button_2"
-                        },
+							"host": "trackCustomEvent",
+							"category": "other",
+							"name": "Panel_2_Video2",
+							"value": "Button_2"
+						},
 						{
 							"host": "setAttribute",
 							"name": "Button_1",
