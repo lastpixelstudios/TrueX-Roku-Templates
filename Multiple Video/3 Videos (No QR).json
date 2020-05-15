@@ -1,0 +1,1369 @@
+{
+	"steps": [
+		{
+			"name": "main_card",
+			"elements": [
+				{
+					"__comment__": "Replay Thumbnail image for Video_1 (video being played)",
+					"name": "Video_1_Thumbnail",
+					"type": "Image",
+					"x": "110",
+					"y": "112",
+					"width": "1150",
+					"height": "647",
+					"image_url": "https://media.truex.com/video_assets/2019-03-11/290e210b-0c08-417f-808a-52c21fc88389.jpg",
+					"opacity": "0"
+				},
+				{
+					"__comment__": "Video for this step",
+					"name": "Video_1",
+					"type": "Video",
+					"x": "110",
+					"y": "112",
+					"width": "1150",
+					"height": "647",
+					"loop": false,
+					"autoplay": true,
+					"replayable": true,
+					"focusable": false,
+					"src": "https://media.truex.com/video_assets/2019-03-11/0be5d352-c861-43d9-aff7-620e558cbe00_large.mp4"
+				},
+				{
+					"__comment__": "DON'T REPLACE. Replay icon over thumbnail.",
+					"name": "Replay_Thumbnail",
+					"type": "Image",
+					"x": "345",
+					"y": "779",
+					"width": "212",
+					"height": "119",
+					"image_url": "https://media.truex.com/image_assets/2020-03-15/59a30adb-0a8d-4471-a61e-6a2136f7e7f7.png",
+					"opacity": 0
+				},
+				{
+					"__comment__": "DON'T REPLACE. Now Playing overlay on thumbnails.",
+					"name": "Now_Playing_Thumbnail",
+					"type": "Image",
+					"x": "345",
+					"y": "779",
+					"width": "212",
+					"height": "119",
+					"image_url": "https://media.truex.com/image_assets/2020-03-15/bb72d927-2903-42bf-9013-0fb986cc4416.png",
+					"opacity": 1
+				},
+				{
+					"__comment__": "DON'T REPLACE. Play icon over video thumbnails",
+					"name": "Play_Thumbnail",
+					"type": "Image",
+					"x": "345",
+					"y": "779",
+					"width": "212",
+					"height": "119",
+					"image_url": "https://media.truex.com/image_assets/2020-03-15/175cb860-eddb-4d25-97f2-e10f653b6eca.png",
+					"opacity": 0
+				},
+				{
+					"__comment__": "Video thumbnail 1",
+					"name": "Button_1",
+					"type": "Button",
+					"x": "345",
+					"y": "779",
+					"width": "212",
+					"height": "119",
+					"image_url": "https://media.truex.com/video_assets/2019-03-11/290e210b-0c08-417f-808a-52c21fc88389.jpg",
+					"focusable": true,
+					"guide": "right,bottom",
+					"hover_effect": false
+				},
+				{
+					"__comment__": "Video thumbnail 2",
+					"name": "Button_2",
+					"type": "Button",
+					"x": "581",
+					"y": "779",
+					"width": "212",
+					"height": "119",
+					"image_url": "https://media.truex.com/video_assets/2019-03-11/f9428227-b208-4562-91db-4919ff949212.jpg",
+					"focusable": true,
+					"guide": "right,bottom",
+					"hover_effect": false
+				},
+				{
+					"__comment__": "Video thumbnail 3",
+					"name": "Button_3",
+					"type": "Button",
+					"x": "817",
+					"y": "779",
+					"width": "212",
+					"height": "119",
+					"image_url": "https://media.truex.com/video_assets/2019-03-11/0d5efa56-119c-4a2e-829d-d1494404972d.jpg",
+					"focusable": false,
+					"guide": "right,bottom",
+					"hover_effect": false
+				},
+				{
+					"__comment__": "Background for border around highlighted thumbnail.",
+					"name": "Thumbnail_Highlight",
+					"type": "Rectangle",
+					"x": "335",
+					"y": "769",
+					"width": "232",
+					"height": "139",
+					"color": "0xffffffff"
+				},
+				{
+					"__comment__": "Background image",
+					"name": "Background",
+					"type": "Image",
+					"x": "0",
+					"y": "0",
+					"width": "1920",
+					"height": "1080",
+					"image_url": "https://media.truex.com/image_assets/2020-03-16/1fafe127-c35d-44df-821d-02a167729b46.png",
+					"opacity": "1"
+				}
+			],
+			"behaviors": {
+				"Video_1": {
+					"appear": [
+						{
+							"host": "focusElement",
+							"name": "Button_1"
+						}
+					],
+					"videoStarted": [
+						{
+							"host": "setAttribute",
+							"name": "Video_1_Thumbnail",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "assign",
+							"key": "video_playing",
+							"value": true
+						}
+					],
+					"videoCompleted": [
+						{
+							"host": "setAttribute",
+							"name": "Replay_Thumbnail",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Now_Playing_Thumbnail",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Now_Playing_Thumbnail",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Video_1_Thumbnail",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "assign",
+							"key": "video_playing",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Video_1",
+							"key": "focusable",
+							"value": false
+						}
+					]
+				},
+				"Button_1": {
+					"onFocusGained": [
+						{
+							"host": "trackCustomEvent",
+							"category": "other",
+							"name": "Panel_1_Video1",
+							"value": "Button_1"
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_1",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "x",
+							"value": 335
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "opacity",
+							"value": 1
+						}
+					],
+					"onFocusLost": [
+						{
+							"host": "setAttribute",
+							"name": "Button_1",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "opacity",
+							"value": 0
+						}
+					],
+					"onselect": [
+						{
+							"host": "if",
+							"expression": {
+								"operation": "==",
+								"values": [
+									{
+										"key": "video_playing"
+									},
+									false
+								]
+							},
+							"then": [
+								{
+									"target": "Video_1",
+									"host": "playVideo"
+								},
+								{
+									"host": "setAttribute",
+									"name": "Replay_Thumbnail",
+									"key": "opacity",
+									"value": 0
+								},
+								{
+									"host": "setAttribute",
+									"name": "Now_Playing_Thumbnail",
+									"key": "opacity",
+									"value": 1
+								}
+							]
+						}
+					]
+				},
+				"Button_2": {
+					"onselect": [
+						{
+							"host": "replaceStep",
+							"cardName": "step_2"
+						}
+					],
+					"onFocusGained": [
+						{
+							"host": "trackCustomEvent",
+							"category": "other",
+							"name": "Panel_2_Video2",
+							"value": "Button_2"
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_1",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "x",
+							"value": 571
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "x",
+							"value": 581
+						}
+					],
+					"onFocusLost": [
+						{
+							"host": "setAttribute",
+							"name": "Button_1",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "opacity",
+							"value": 0
+						}
+					]
+				},
+				"Button_3": {
+					"onselect": [
+						{
+							"host": "replaceStep",
+							"cardName": "step_3"
+						}
+					],
+					"onFocusGained": [
+						{
+							"host": "trackCustomEvent",
+							"category": "other",
+							"name": "Panel_3_Video3",
+							"value": "Button_3"
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "x",
+							"value": 807
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "x",
+							"value": 817
+						}
+					],
+					"onFocusLost": [
+						{
+							"host": "setAttribute",
+							"name": "Button_1",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "opacity",
+							"value": 0
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "step_2",
+			"elements": [
+				{
+					"__comment__": "Replay Thumbnail image for Video_2 (video being played)",
+					"name": "Video_2_Thumbnail",
+					"type": "Image",
+					"x": "110",
+					"y": "112",
+					"width": "1150",
+					"height": "647",
+					"image_url": "https://media.truex.com/video_assets/2019-03-11/f9428227-b208-4562-91db-4919ff949212.jpg",
+					"opacity": "0"
+				},
+				{
+					"__comment__": "Video for this step",
+					"name": "Video_2",
+					"type": "Video",
+					"x": "110",
+					"y": "112",
+					"width": "1150",
+					"height": "647",
+					"loop": false,
+					"autoplay": true,
+					"replayable": true,
+					"focusable": false,
+					"src": "https://media.truex.com/video_assets/2019-03-11/b43edf49-a7cc-4eca-9d54-5b89b7682cef_large.mp4"
+				},
+				{
+					"__comment__": "DON'T REPLACE. Replay icon over thumbnail.",
+					"name": "Replay_Thumbnail",
+					"type": "Image",
+					"x": "581",
+					"y": "779",
+					"width": "212",
+					"height": "119",
+					"image_url": "https://media.truex.com/image_assets/2020-03-15/59a30adb-0a8d-4471-a61e-6a2136f7e7f7.png",
+					"opacity": 0
+				},
+				{
+					"__comment__": "DON'T REPLACE. Now Playing overlay on thumbnails.",
+					"name": "Now_Playing_Thumbnail",
+					"type": "Image",
+					"x": "581",
+					"y": "779",
+					"width": "212",
+					"height": "119",
+					"image_url": "https://media.truex.com/image_assets/2020-03-15/bb72d927-2903-42bf-9013-0fb986cc4416.png",
+					"opacity": 1
+				},
+				{
+					"__comment__": "DON'T REPLACE. Play icon over video thumbnails",
+					"name": "Play_Thumbnail",
+					"type": "Image",
+					"x": "581",
+					"y": "779",
+					"width": "212",
+					"height": "119",
+					"image_url": "https://media.truex.com/image_assets/2020-03-15/175cb860-eddb-4d25-97f2-e10f653b6eca.png",
+					"opacity": 0
+				},
+				{
+					"__comment__": "Video thumbnail 1",
+					"name": "Button_1",
+					"type": "Button",
+					"x": "345",
+					"y": "779",
+					"width": "212",
+					"height": "119",
+					"image_url": "https://media.truex.com/video_assets/2019-03-11/290e210b-0c08-417f-808a-52c21fc88389.jpg",
+					"focusable": true,
+					"guide": "right,bottom",
+					"hover_effect": false
+				},
+				{
+					"__comment__": "Video thumbnail 2",
+					"name": "Button_2",
+					"type": "Button",
+					"x": "581",
+					"y": "779",
+					"width": "212",
+					"height": "119",
+					"image_url": "https://media.truex.com/video_assets/2019-03-11/f9428227-b208-4562-91db-4919ff949212.jpg",
+					"focusable": true,
+					"guide": "right,bottom",
+					"hover_effect": false
+				},
+				{
+					"__comment__": "Video thumbnail 3",
+					"name": "Button_3",
+					"type": "Button",
+					"x": "817",
+					"y": "779",
+					"width": "212",
+					"height": "119",
+					"image_url": "https://media.truex.com/video_assets/2019-03-11/0d5efa56-119c-4a2e-829d-d1494404972d.jpg",
+					"focusable": false,
+					"guide": "right,bottom",
+					"hover_effect": false
+				},
+				{
+					"__comment__": "Background for border around highlighted thumbnail.",
+					"name": "Thumbnail_Highlight",
+					"type": "Rectangle",
+					"x": "335",
+					"y": "769",
+					"width": "232",
+					"height": "139",
+					"color": "0xffffffff"
+				},
+				{
+					"__comment__": "Background image",
+					"name": "Background",
+					"type": "Image",
+					"x": "0",
+					"y": "0",
+					"width": "1920",
+					"height": "1080",
+					"image_url": "https://media.truex.com/image_assets/2020-03-16/1fafe127-c35d-44df-821d-02a167729b46.png",
+					"opacity": "1"
+				}
+			],
+			"behaviors": {
+				"Video_2": {
+					"appear": [
+						{
+							"host": "focusElement",
+							"name": "Button_2"
+						}
+					],
+					"videoStarted": [
+						{
+							"host": "setAttribute",
+							"name": "Video_2_Thumbnail",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "assign",
+							"key": "video_playing",
+							"value": true
+						}
+					],
+					"videoCompleted": [
+						{
+							"host": "setAttribute",
+							"name": "Replay_Thumbnail",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Now_Playing_Thumbnail",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Now_Playing_Thumbnail",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Video_2_Thumbnail",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "assign",
+							"key": "video_playing",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Video_1",
+							"key": "focusable",
+							"value": false
+						}
+					]
+				},
+				"Button_1": {
+					"onselect": [
+						{
+							"host": "replaceStep",
+							"cardName": "main_card"
+						}
+					],
+					"onFocusGained": [
+						{
+							"host": "trackCustomEvent",
+							"category": "other",
+							"name": "Panel_1_Video1",
+							"value": "Button_1"
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_1",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "x",
+							"value": 335
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "x",
+							"value": 345
+						}
+					],
+					"onFocusLost": [
+						{
+							"host": "setAttribute",
+							"name": "Button_1",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "opacity",
+							"value": 0
+						}
+					]
+				},
+				"Button_2": {
+					"onselect": [
+						{
+							"host": "if",
+							"expression": {
+								"operation": "==",
+								"values": [
+									{
+										"key": "video_playing"
+									},
+									false
+								]
+							},
+							"then": [
+								{
+									"target": "Video_2",
+									"host": "playVideo"
+								},
+								{
+									"host": "setAttribute",
+									"name": "Replay_Thumbnail",
+									"key": "opacity",
+									"value": 0
+								},
+								{
+									"host": "setAttribute",
+									"name": "Now_Playing_Thumbnail",
+									"key": "opacity",
+									"value": 1
+								}
+							]
+						}
+					],
+					"onFocusGained": [
+						{
+							"host": "trackCustomEvent",
+							"category": "other",
+							"name": "Panel_2_Video2",
+							"value": "Button_2"
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_1",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "x",
+							"value": 571
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "x",
+							"value": 581
+						}
+					],
+					"onFocusLost": [
+						{
+							"host": "setAttribute",
+							"name": "Button_1",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "opacity",
+							"value": 0
+						}
+					]
+				},
+				"Button_3": {
+					"onselect": [
+						{
+							"host": "replaceStep",
+							"cardName": "step_3"
+						}
+					],
+					"onFocusGained": [
+						{
+							"host": "trackCustomEvent",
+							"category": "other",
+							"name": "Panel_3_Video3",
+							"value": "Button_3"
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "x",
+							"value": 807
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "x",
+							"value": 817
+						}
+					],
+					"onFocusLost": [
+						{
+							"host": "setAttribute",
+							"name": "Button_1",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "opacity",
+							"value": 0
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "step_3",
+			"elements": [
+				{
+					"__comment__": "Replay Thumbnail image for Video_3 (video being played)",
+					"name": "Video_3_Thumbnail",
+					"type": "Image",
+					"x": "110",
+					"y": "112",
+					"width": "1150",
+					"height": "647",
+					"image_url": "https://media.truex.com/video_assets/2019-03-11/0d5efa56-119c-4a2e-829d-d1494404972d.jpg",
+					"opacity": "0"
+				},
+				{
+					"__comment__": "Video for this step",
+					"name": "Video_3",
+					"type": "Video",
+					"x": "110",
+					"y": "112",
+					"width": "1150",
+					"height": "647",
+					"loop": false,
+					"autoplay": true,
+					"replayable": true,
+					"focusable": false,
+					"src": "https://media.truex.com/video_assets/2019-03-11/e81ffa51-50a9-4dbd-9b56-dc3b574153d9_large.mp4"
+				},
+				{
+					"__comment__": "DON'T REPLACE. Replay icon over thumbnail.",
+					"name": "Replay_Thumbnail",
+					"type": "Image",
+					"x": "817",
+					"y": "779",
+					"width": "212",
+					"height": "119",
+					"image_url": "https://media.truex.com/image_assets/2020-03-15/59a30adb-0a8d-4471-a61e-6a2136f7e7f7.png",
+					"opacity": 0
+				},
+				{
+					"__comment__": "DON'T REPLACE. Now Playing overlay on thumbnails.",
+					"name": "Now_Playing_Thumbnail",
+					"type": "Image",
+					"x": "817",
+					"y": "779",
+					"width": "212",
+					"height": "119",
+					"image_url": "https://media.truex.com/image_assets/2020-03-15/bb72d927-2903-42bf-9013-0fb986cc4416.png",
+					"opacity": 1
+				},
+				{
+					"__comment__": "DON'T REPLACE. Play icon over video thumbnails",
+					"name": "Play_Thumbnail",
+					"type": "Image",
+					"x": "817",
+					"y": "779",
+					"width": "212",
+					"height": "119",
+					"image_url": "https://media.truex.com/image_assets/2020-03-15/175cb860-eddb-4d25-97f2-e10f653b6eca.png",
+					"opacity": 0
+				},
+				{
+					"__comment__": "Video thumbnail 1",
+					"name": "Button_1",
+					"type": "Button",
+					"x": "345",
+					"y": "779",
+					"width": "212",
+					"height": "119",
+					"image_url": "https://media.truex.com/video_assets/2019-03-11/290e210b-0c08-417f-808a-52c21fc88389.jpg",
+					"focusable": true,
+					"guide": "right,bottom",
+					"hover_effect": false
+				},
+				{
+					"__comment__": "Video thumbnail 2",
+					"name": "Button_2",
+					"type": "Button",
+					"x": "581",
+					"y": "779",
+					"width": "212",
+					"height": "119",
+					"image_url": "https://media.truex.com/video_assets/2019-03-11/f9428227-b208-4562-91db-4919ff949212.jpg",
+					"focusable": true,
+					"guide": "right,bottom",
+					"hover_effect": false
+				},
+				{
+					"__comment__": "Video thumbnail 3",
+					"name": "Button_3",
+					"type": "Button",
+					"x": "817",
+					"y": "779",
+					"width": "212",
+					"height": "119",
+					"image_url": "https://media.truex.com/video_assets/2019-03-11/0d5efa56-119c-4a2e-829d-d1494404972d.jpg",
+					"focusable": false,
+					"guide": "right,bottom",
+					"hover_effect": false
+				},
+				{
+					"__comment__": "Background for border around highlighted thumbnail.",
+					"name": "Thumbnail_Highlight",
+					"type": "Rectangle",
+					"x": "335",
+					"y": "769",
+					"width": "232",
+					"height": "139",
+					"color": "0xffffffff"
+				},
+				{
+					"__comment__": "Background image",
+					"name": "Background",
+					"type": "Image",
+					"x": "0",
+					"y": "0",
+					"width": "1920",
+					"height": "1080",
+					"image_url": "https://media.truex.com/image_assets/2020-03-16/1fafe127-c35d-44df-821d-02a167729b46.png",
+					"opacity": "1"
+				}
+			],
+			"behaviors": {
+				"Video_3": {
+					"appear": [
+						{
+							"host": "focusElement",
+							"name": "Button_3"
+						}
+					],
+					"videoStarted": [
+						{
+							"host": "setAttribute",
+							"name": "Video_3_Thumbnail",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "assign",
+							"key": "video_playing",
+							"value": true
+						}
+					],
+					"videoCompleted": [
+						{
+							"host": "setAttribute",
+							"name": "Replay_Thumbnail",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Now_Playing_Thumbnail",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Now_Playing_Thumbnail",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Video_3_Thumbnail",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "assign",
+							"key": "video_playing",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Video_3",
+							"key": "focusable",
+							"value": false
+						}
+					]
+				},
+				"Button_1": {
+					"onselect": [
+						{
+							"host": "replaceStep",
+							"cardName": "main_card"
+						}
+					],
+					"onFocusGained": [
+						{
+							"host": "trackCustomEvent",
+							"category": "other",
+							"name": "Panel_1_Video1",
+							"value": "Button_1"
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_1",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "x",
+							"value": 335
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "x",
+							"value": 345
+						}
+					],
+					"onFocusLost": [
+						{
+							"host": "setAttribute",
+							"name": "Button_1",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "opacity",
+							"value": 0
+						}
+					]
+				},
+				"Button_2": {
+					"onselect": [
+						{
+							"host": "replaceStep",
+							"cardName": "step_2"
+						}
+					],
+					"onFocusGained": [
+						{
+							"host": "trackCustomEvent",
+							"category": "other",
+							"name": "Panel_2_Video2",
+							"value": "Button_2"
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_1",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "x",
+							"value": 571
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "x",
+							"value": 581
+						}
+					],
+					"onFocusLost": [
+						{
+							"host": "setAttribute",
+							"name": "Button_1",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "opacity",
+							"value": 0
+						}
+					]
+				},
+				"Button_3": {
+					"onselect": [
+						{
+							"host": "if",
+							"expression": {
+								"operation": "==",
+								"values": [
+									{
+										"key": "video_playing"
+									},
+									false
+								]
+							},
+							"then": [
+								{
+									"target": "Video_3",
+									"host": "playVideo"
+								},
+								{
+									"host": "setAttribute",
+									"name": "Replay_Thumbnail",
+									"key": "opacity",
+									"value": 0
+								},
+								{
+									"host": "setAttribute",
+									"name": "Now_Playing_Thumbnail",
+									"key": "opacity",
+									"value": 1
+								}
+							]
+						}
+					],
+					"onFocusGained": [
+						{
+							"host": "trackCustomEvent",
+							"category": "other",
+							"name": "Panel_3_Video3",
+							"value": "Button_3"
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "x",
+							"value": 807
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "opacity",
+							"value": 1
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "x",
+							"value": 817
+						}
+					],
+					"onFocusLost": [
+						{
+							"host": "setAttribute",
+							"name": "Button_1",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_2",
+							"key": "focusable",
+							"value": false
+						},
+						{
+							"host": "setAttribute",
+							"name": "Button_3",
+							"key": "focusable",
+							"value": true
+						},
+						{
+							"host": "setAttribute",
+							"name": "Play_Thumbnail",
+							"key": "opacity",
+							"value": 0
+						},
+						{
+							"host": "setAttribute",
+							"name": "Thumbnail_Highlight",
+							"key": "opacity",
+							"value": 0
+						}
+					]
+				}
+			}
+		}
+	]
+}
