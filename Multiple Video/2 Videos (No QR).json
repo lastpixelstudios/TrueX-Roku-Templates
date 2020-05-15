@@ -29,6 +29,7 @@
 					"src": "https://media.truex.com/video_assets/2019-03-11/0be5d352-c861-43d9-aff7-620e558cbe00_large.mp4"
 				},
 				{
+					"__comment__": "DON'T REPLACE. Replay icon over thumbnail.",
 					"name": "Replay_Thumbnail",
 					"type": "Image",
 					"x": "459",
