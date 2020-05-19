@@ -44,7 +44,7 @@
 					"color": "0xffffffff"
 				},
 				{
-					"__comment__": "DON'T REPLACE.Transparent button.",
+					"__comment__": "DO NOT REPLACE.Transparent button.",
 					"name": "Button_1",
 					"type": "Button",
 					"x": "1555",
@@ -56,7 +56,7 @@
 					"hover_effect": true
 				},
 				{
-					"__comment__": "DON'T REPLACE. Transparent button.",
+					"__comment__": "DO NOT REPLACE. Transparent button.",
 					"name": "Button_2",
 					"type": "Button",
 					"x": "1595",
@@ -68,7 +68,7 @@
 					"hover_effect": true
 				},
 				{
-					"__comment__": "DON'T REPLACE. Transparent button.",
+					"__comment__": "DO NOT REPLACE. Transparent button.",
 					"name": "Button_3",
 					"type": "Button",
 					"x": "1635",
